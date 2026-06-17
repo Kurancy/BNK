@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1E3126; /* Premium Deep Spruce/Pine Gray-Green */
+  --color-accent: #3E7C59; /* Elegant Organic Sage Green */
+  --color-background-brand: #FAF8F5; /* Cozy Warm Linen Alabaster White */
+  --color-danger: #B5422D; /* Warm Brick/Terracotta Red */
+  --color-warning: #CA8A04; /* Earthy Ochre Gold */
+  
+  --color-slate-50: #FAF8F5;
+  --color-slate-100: #F3ECE2;
+  --color-slate-200: #E6DBCB;
+  --color-slate-300: #D7CAB7;
+  --color-slate-400: #BBAA94;
+  --color-slate-500: #8C7A65;
+  --color-slate-600: #6B5B4B;
+  --color-slate-700: #4B3E32;
+  --color-slate-800: #2C241C;
+  --color-slate-900: #15110D;
+  
+  --font-sans: "Inter", "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  background-color: var(--bg-app, var(--color-background-brand));
+  color: var(--text-main, #1e293b);
+  font-family: var(--font-sans);
+}
+
+/*Theme Definitions & Spacers*/
+:root, .theme-dark-blue {
+  --bg-app: #FAF8F5; /* Warm Linen */
+  --bg-sidebar: #1E3126; /* Premium Spruce */
+  --text-sidebar: rgba(255, 255, 255, 0.60);
+  --text-sidebar-hover: #ffffff;
+  --text-sidebar-active: #ffffff;
+  --border-sidebar: rgba(255, 255, 255, 0.1);
+  --bg-sidebar-active: rgba(255, 255, 255, 0.1);
+  --border-sidebar-active-bar: #00C48C;
+  --logo-bg: #3E7C59;
+  --logo-border: rgba(255, 255, 255, 0.05);
+  --logo-text: #ffffff;
+  --text-main: #2C241C;
+  --text-muted: #6B5B4B;
+  --border-divider: #E6DBCB;
+}
+
+.theme-light {
+  --bg-app: #f3f4f6; /* Slate gray canvas */
+  --bg-sidebar: #ffffff; /* Minimal crisp white sidebar */
+  --text-sidebar: #4b5563; /* Slate-600 clean link */
+  --text-sidebar-hover: #111827; /* Near black intense */
+  --text-sidebar-active: #3E7C59; /* Active sage green */
+  --border-sidebar: #e5e7eb; /* Grey-200 border screen spacer */
+  --bg-sidebar-active: rgba(62, 124, 89, 0.09); /* Soft light green fill */
+  --border-sidebar-active-bar: #3E7C59; /* Sage green active bar */
+  --logo-bg: rgba(62, 124, 89, 0.1);
+  --logo-border: rgba(62, 124, 89, 0.15);
+  --logo-text: #3E7C59;
+  --text-main: #111827; /* Rich dark primary */
+  --text-muted: #4b5563; /* Slate primary */
+  --border-divider: #e5e7eb; /* Grey card division border */
+  
+  /* Core layout variables overrides */
+  --color-background-brand: #f3f4f6;
+  --color-slate-50: #f9fafb;
+  --color-slate-100: #f3f4f6;
+  --color-slate-200: #e5e7eb;
+  --color-slate-300: #d1d5db;
+}
+
+/* Custom banking scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom animation keyframes */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(1.02);
+  }
+}
+
+.glow-active {
+  box-shadow: 0 0 12px rgba(0, 196, 140, 0.2);
+}
+

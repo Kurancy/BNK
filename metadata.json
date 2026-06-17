@@ -1,0 +1,6 @@
+{
+  "name": "BNK Insurance",
+  "description": "Premium Enterprise Banking, Smart Statement Analysis, and Credit Risk Assessment Dashboard",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
